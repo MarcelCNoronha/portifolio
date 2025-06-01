@@ -1,11 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
+
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false); // Estado para controlar a visibilidade do menu móvel
+  const [showHeader, setShowHeader] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+   useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY) {
+        setShowHeader(false); // rolando para baixo
+      } else {
+        setShowHeader(true);  // rolando para cima
+      }
+      setLastScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY]);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-gray-900 text-white p-4 shadow-lg z-50">
+    <nav className={`fixed top-0 left-0 w-full bg-gray-900 text-white p-4 shadow-lg z-50 transition-transform duration-300 ${showHeader ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo ou Nome da Empresa */}
         <Link to="/" className="text-2xl font-bold text-white hover:text-blue-300 transition-colors duration-300">
