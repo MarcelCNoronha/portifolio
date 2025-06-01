@@ -5,7 +5,7 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false); // Estado para controlar a visibilidade do menu móvel
 
   return (
-    <nav className="bg-gray-900 text-white p-4 shadow-lg">
+    <nav className="fixed top-0 left-0 w-full bg-gray-900 text-white p-4 shadow-lg z-50">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo ou Nome da Empresa */}
         <Link to="/" className="text-2xl font-bold text-white hover:text-blue-300 transition-colors duration-300">
@@ -68,7 +68,7 @@ function Header() {
       {/* Menu Móvel (aparece quando isOpen é true e em telas pequenas) */}
       {isOpen && (
         <div className="md:hidden"> {/* Visível apenas em telas pequenas quando 'isOpen' é true */}
-          <ul className="flex flex-col items-center mt-4 space-y-4"> {/* Menu empilhado verticalmente */}
+          <ul className="flex flex-col items-end mt-4 space-y-4 pr-4"> {/* Menu empilhado verticalmente */}
             <li>
               <Link 
                 to="/" 
