@@ -6,7 +6,7 @@ function Contact({ theme, toggleTheme }) { // 'toggleTheme' é recebido mas não
     // Adiciona classes de fundo e texto dinâmicas baseadas no tema recebido via prop
     <section id="contact-page" className={`py-16 md:py-20 min-h-screen flex items-center justify-center ${theme === 'dark' ? 'bg-gray-800 text-gray-200' : 'bg-gray-50 text-gray-800'}`}>
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">Fale Conosco</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-8">Fale Conosco</h2>
         <p className={`text-lg leading-relaxed max-w-3xl mx-auto mb-10 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
           Tem alguma dúvida, projeto em mente ou quer uma análise gratuita para o seu negócio em Viçosa? Preencha o formulário abaixo ou entre em contato pelos nossos canais.
         </p>
