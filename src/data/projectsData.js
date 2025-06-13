@@ -9,7 +9,7 @@ const projectsData = [
     results:
       "Aumento de 30% nas reservas online e 25% mais visualizações no Google Maps em 3 meses.",
     imageUrl: "https://placehold.co/600x400/e0e7ff/3f51b5?text=Projeto+Restaurante",
-    link: "#", // Link para o projeto real, se houver
+    link: "#",
   },
   {
     id: 2,

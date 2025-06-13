@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
-// Importar BrowserRouter, Routes, Route apenas se você realmente usa-os no App.jsx para roteamento
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from "./pages/Home";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 function App() {
-  const [theme, setTheme] = useState("light"); // Default theme
+  const [theme, setTheme] = useState("light");
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
@@ -18,7 +16,7 @@ function App() {
   const toggleTheme = () => {
     setTheme((prevTheme) => {
       const newTheme = prevTheme === "light" ? "dark" : "light";
-      localStorage.setItem("theme", newTheme); // Save theme preference
+      localStorage.setItem("theme", newTheme); 
       return newTheme;
     });
   };
@@ -30,8 +28,6 @@ function App() {
         <Home theme={theme} />{" "}
       </main>
       <Footer theme={theme} />
-
-      {/* Botão Flutuante do WhatsApp */}
       <a
         href="https://wa.me/31971531429?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços."
         target="_blank"

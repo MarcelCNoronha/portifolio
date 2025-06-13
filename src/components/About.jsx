@@ -1,5 +1,5 @@
 import React from "react";
-import CallToAction from "./CallToAction"; // Import the reusable CTA
+import CallToAction from "./CallToAction"; 
 
 function About({ theme }) {
   return (
