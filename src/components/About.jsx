@@ -1,12 +1,14 @@
 import React from "react";
-import CallToAction from "./CallToAction"; 
+import CallToAction from "./CallToAction";
 
 function About({ theme }) {
   return (
     <section
       id="profile-page"
       className={`min-h-screen flex items-center justify-center ${
-        theme === "dark" ? "bg-gray-800 text-gray-200" : "bg-gray-50 text-gray-800"
+        theme === "dark"
+          ? "bg-gray-800 text-gray-200"
+          : "bg-gray-50 text-gray-800"
       }`}
     >
       <div className="container mx-auto px-4 text-center">
@@ -22,10 +24,11 @@ function About({ theme }) {
             theme === "dark" ? "text-gray-300" : "text-gray-700"
           }`}
         >
-          Na <strong className="text-blue-600">[Nome da Sua Assessoria Digital]</strong>, somos
-          apaixonados por transformar negócios em Viçosa e região através do poder do marketing
-          digital. Acreditamos que cada empresa, independentemente do tamanho, merece uma presença
-          online forte e estratégica para alcançar seu verdadeiro potencial.
+          Na <strong className="text-blue-600">Assessoria Digital</strong>,
+          somos apaixonados em transformar negócios através do poder do
+          marketing digital. Acreditamos que cada empresa, independentemente do
+          tamanho, merece uma presença online forte e estratégica para alcançar
+          seu verdadeiro potencial.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-16">
@@ -37,15 +40,23 @@ function About({ theme }) {
             >
               Nossa Missão
             </h3>
-            <p className={`leading-relaxed mb-4 ${theme === "dark" ? "text-gray-300" : "text-gray-700"}`}>
-              Nossa missão é capacitar empresas locais com as ferramentas e estratégias digitais
-              necessárias para crescer, inovar e se conectar de forma significativa com seu
-              público-alvo. Fazemos isso com transparência, dedicação e foco em resultados
-              mensuráveis.
+            <p
+              className={`leading-relaxed mb-4 ${
+                theme === "dark" ? "text-gray-300" : "text-gray-700"
+              }`}
+            >
+              Nossa missão é capacitar empresas locais com as ferramentas e
+              estratégias digitais necessárias para crescer, inovar e se
+              conectar de forma significativa com seu público-alvo. Fazemos isso
+              com transparência, dedicação e foco em resultados mensuráveis.
             </p>
-            <p className={`leading-relaxed mb-6 ${theme === "dark" ? "text-gray-300" : "text-gray-700"}`}>
-              Conheça mais sobre nossa expertise e trajetória profissional em nosso perfil do
-              LinkedIn:{" "}
+            <p
+              className={`leading-relaxed mb-6 ${
+                theme === "dark" ? "text-gray-300" : "text-gray-700"
+              }`}
+            >
+              Conheça mais sobre nossa expertise e trajetória profissional em
+              nosso perfil do LinkedIn:{" "}
               <a
                 href="https://www.linkedin.com/in/marcel-cardoso-de-noronha-dev/"
                 target="_blank"
@@ -69,18 +80,24 @@ function About({ theme }) {
               }`}
             >
               <li>
-                **Inovação:** Buscamos constantemente as melhores e mais recentes tendências do
-                mercado.
-              </li>
-              <li>**Resultados:** Nosso compromisso é com o crescimento e sucesso dos nossos clientes.</li>
-              <li>
-                **Transparência:** Mantemos uma comunicação clara e honesta em todas as etapas.
+                <strong>Inovação:</strong> Buscamos constantemente as melhores e
+                mais recentes tendências do mercado.
               </li>
               <li>
-                **Parceria:** Construímos relacionamentos sólidos e duradouros com nossos clientes.
+                <strong>Resultados:</strong> Nosso compromisso é com o
+                crescimento e o sucesso dos nossos clientes.
               </li>
               <li>
-                **Excelência:** Entregamos serviços de alta qualidade e com atenção aos detalhes.
+                <strong>Transparência:</strong> Mantemos uma comunicação clara e
+                honesta em todas as etapas.
+              </li>
+              <li>
+                <strong>Parceria:</strong> Construímos relacionamentos sólidos e
+                duradouros com nossos clientes.
+              </li>
+              <li>
+                <strong>Excelência:</strong> Entregamos serviços de alta
+                qualidade, com atenção a cada detalhe.
               </li>
             </ul>
           </div>

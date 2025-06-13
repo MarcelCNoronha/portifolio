@@ -7,7 +7,7 @@ function Footer({ theme }) {
         <p className="mb-4">
           &copy; {new Date().getFullYear()}{" "}
           <strong className={`${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
-            [Assessoria Digital]
+            Assessoria Digital Viçosa
           </strong>{" "}
           - Todos os direitos reservados.
         </p>

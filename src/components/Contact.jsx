@@ -163,7 +163,7 @@ function Contact({ theme }) {
           >
             📞{" "}
             <a href="tel:+5531XXXX-XXXX" className="hover:underline text-blue-600">
-              (XX) XXXX-XXXX
+              (31) 97153-1429
             </a>
           </p>
           <p
@@ -171,7 +171,7 @@ function Contact({ theme }) {
           >
             📧{" "}
             <a href="mailto:contato@suaassessoria.com.br" className="hover:underline text-blue-600">
-              contato@suaassessoria.com.br
+              contato@assessoriadigitalvicosa.com.br
             </a>
           </p>
         </div>
