@@ -6,9 +6,7 @@ function About({ theme }) {
     <section
       id="profile-page"
       className={`min-h-screen flex items-center justify-center ${
-        theme === "dark"
-          ? "bg-gray-800 text-gray-200"
-          : "bg-gray-50 text-gray-800"
+        theme === "dark" ? "bg-gray-800 text-gray-200" : "bg-gray-50 text-gray-800"
       }`}
     >
       <div className="container mx-auto px-4 text-center">
@@ -25,13 +23,10 @@ function About({ theme }) {
           }`}
         >
           Na{" "}
-          <strong className="text-blue-600">
-             Assessoria Digital
-          </strong>
-          , somos apaixonados por transformar negócios
-          através do poder da tecnologia. Acreditamos que cada empresa,
-          independentemente do tamanho, merece uma presença online forte e
-          estratégica para alcançar seu verdadeiro potencial.
+          <strong className="text-blue-600">Assessoria Digital</strong>, somos apaixonados por
+          transformar negócios através do poder da tecnologia. Acreditamos que cada empresa,
+          independentemente do tamanho, merece uma presença online forte e estratégica para alcançar
+          seu verdadeiro potencial.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-16">
@@ -48,34 +43,18 @@ function About({ theme }) {
                 theme === "dark" ? "text-gray-300" : "text-gray-700"
               }`}
             >
-              Nossa missão é capacitar empresas locais com as ferramentas e
-              estratégias digitais necessárias para crescer, inovar e se
-              conectar de forma significativa com seu público-alvo. Fazemos isso
-              com transparência, dedicação e foco em resultados mensuráveis.
-            <p
-              className={`leading-relaxed mb-4 ${
-                theme === "dark" ? "text-gray-300" : "text-gray-700"
-              }`}
-            >
-              Nossa missão é capacitar empresas locais com as ferramentas e
-              estratégias digitais necessárias para crescer, inovar e se
-              conectar de forma significativa com seu público-alvo. Fazemos isso
-              com transparência, dedicação e foco em resultados mensuráveis.
+              Nossa missão é capacitar empresas locais com as ferramentas e estratégias digitais
+              necessárias para crescer, inovar e se conectar de forma significativa com seu
+              público-alvo. Fazemos isso com transparência, dedicação e foco em resultados
+              mensuráveis.
             </p>
             <p
               className={`leading-relaxed mb-6 ${
                 theme === "dark" ? "text-gray-300" : "text-gray-700"
               }`}
             >
-              Conheça mais sobre nossa expertise e trajetória profissional em
-              nosso perfil do LinkedIn:{" "}
-            <p
-              className={`leading-relaxed mb-6 ${
-                theme === "dark" ? "text-gray-300" : "text-gray-700"
-              }`}
-            >
-              Conheça mais sobre nossa expertise e trajetória profissional em
-              nosso perfil do LinkedIn:{" "}
+              Conheça mais sobre nossa expertise e trajetória profissional em nosso perfil do
+              LinkedIn:{" "}
               <a
                 href="https://www.linkedin.com/in/marcel-cardoso-de-noronha-dev/"
                 target="_blank"
@@ -99,27 +78,24 @@ function About({ theme }) {
               }`}
             >
               <li>
-                <strong>Inovação:</strong> Estamos sempre atentos às tendências
-                e tecnologias mais atuais para entregar soluções criativas e
-                eficazes.
+                <strong>Inovação:</strong> Estamos sempre atentos às tendências e tecnologias mais
+                atuais para entregar soluções criativas e eficazes.
               </li>
               <li>
-                <strong>Resultados:</strong> Focamos em gerar impacto real para
-                o crescimento dos nossos clientes, com metas e entregas claras.
+                <strong>Resultados:</strong> Focamos em gerar impacto real para o crescimento dos
+                nossos clientes, com metas e entregas claras.
               </li>
               <li>
-                <strong>Transparência:</strong> Valorizamos uma comunicação
-                direta, honesta e alinhada em todas as etapas do projeto.
+                <strong>Transparência:</strong> Valorizamos uma comunicação direta, honesta e
+                alinhada em todas as etapas do projeto.
               </li>
               <li>
-                <strong>Parceria:</strong> Atuamos lado a lado com nossos
-                clientes, construindo relações de confiança e colaboração a
-                longo prazo.
+                <strong>Parceria:</strong> Atuamos lado a lado com nossos clientes, construindo
+                relações de confiança e colaboração a longo prazo.
               </li>
               <li>
-                <strong>Excelência:</strong> Buscamos sempre o mais alto nível
-                de qualidade, com atenção aos detalhes e foco na experiência do
-                cliente.
+                <strong>Excelência:</strong> Buscamos sempre o mais alto nível de qualidade, com
+                atenção aos detalhes e foco na experiência do cliente.
               </li>
             </ul>
           </div>

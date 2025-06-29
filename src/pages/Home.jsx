@@ -28,9 +28,11 @@ function Home({ theme }) {
               theme === "dark" ? "text-gray-300" : "text-gray-700"
             }`}
           >
-            Sou especialista em marketing e tecnologia, de Viçosa-MG.
-            Ajudamos o seu negócio a conectar-se ao futuro, aumentando a
-            presença online e conquistando mais clientes.
+            Sou especialista em tecnologia e marketing digital, atuando
+            diretamente de Viçosa-MG. Auxilio empresas na transformação digital,
+            conectando sistemas, otimizando processos e fortalecendo sua
+            presença online para atrair mais clientes e gerar resultados
+            concretos.
           </p>
           <a
             href="#contact-page"
@@ -43,7 +45,7 @@ function Home({ theme }) {
       <About theme={theme} />
       <Projects theme={theme} />
       <Contact theme={theme} />
-      <ScheduleWithGoogle theme={theme} /> 
+      <ScheduleWithGoogle theme={theme} />
     </>
   );
 }
