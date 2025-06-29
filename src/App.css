@@ -5,7 +5,9 @@
   Tailwind's Preflight (reset) already includes this, but it's good practice
   to have it explicitly if you might not be using Preflight or for clarity.
 */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -25,7 +27,7 @@
 */
 #root {
   max-width: 1280px; /* Limits overall content width */
-  margin: 0 auto;    /* Centers the content */
+  margin: 0 auto; /* Centers the content */
   /* padding: 2rem; <-- REMOVIDO DAQUI */
   text-align: center; /* You might want to control this more granularly with Tailwind classes like 'text-center' on specific elements */
 }
@@ -48,6 +50,10 @@
 }
 .logo.react:hover {
   filter: drop_shadow(0 0 2em #61dafbaa);
+}
+
+.carousel-container {
+  touch-action: pan-y;
 }
 
 @keyframes logo-spin {

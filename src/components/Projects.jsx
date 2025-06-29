@@ -10,7 +10,9 @@ function Projects({ theme }) {
     <section
       id="projects-page"
       className={`py-16 md:py-20 min-h-screen ${
-        theme === "dark" ? "bg-gray-800 text-gray-200" : "bg-gray-50 text-gray-800"
+        theme === "dark"
+          ? "bg-gray-800 text-gray-200"
+          : "bg-gray-50 text-gray-800"
       }`}
     >
       <div className="container mx-auto px-4 text-center">
@@ -26,20 +28,24 @@ function Projects({ theme }) {
             theme === "dark" ? "text-gray-300" : "text-gray-700"
           }`}
         >
-          Confira alguns dos trabalhos que realizamos e como ajudamos nossos clientes em Viçosa e
-          região a alcançar seus objetivos digitais.
+          Confira alguns dos trabalhos que realizamos e como ajudamos nossos
+          clientes em Viçosa e região a alcançar seus objetivos digitais.
         </p>
 
         {/* Carousel for Projects */}
         <div className="max-w-4xl mx-auto">
           <Carousel
+            swipeable={true} // deixar true para permitir swipe horizontal
+            emulateTouch={true}
+            dynamicHeight={false}
             showArrows={true}
             infiniteLoop={true}
             showThumbs={false}
             showStatus={false}
             autoPlay={true}
             interval={5000}
-            className="carousel-container" // Add a class for potential custom styling
+            stopOnHover={true}
+            className="carousel-container"
           >
             {projectsData.map((project) => (
               <div
@@ -54,8 +60,14 @@ function Projects({ theme }) {
                   className="w-full h-64 object-cover rounded-md mb-4"
                 />
                 <div className="text-left w-full">
-                  <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
-                  <p className={`font-medium mb-3 ${theme === "dark" ? "text-blue-400" : "text-blue-600"}`}>
+                  <h3 className="text-2xl font-semibold mb-2">
+                    {project.title}
+                  </h3>
+                  <p
+                    className={`font-medium mb-3 ${
+                      theme === "dark" ? "text-blue-400" : "text-blue-600"
+                    }`}
+                  >
                     {project.service}
                   </p>
                   <p className="text-base mb-4">{project.description}</p>

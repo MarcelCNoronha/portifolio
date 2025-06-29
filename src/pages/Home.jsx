@@ -3,6 +3,7 @@ import React from "react";
 import About from "../components/About";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
+import ScheduleWithGoogle from "../components/ScheduleWithGoogle";
 
 function Home({ theme }) {
   return (
@@ -42,6 +43,7 @@ function Home({ theme }) {
       <About theme={theme} />
       <Projects theme={theme} />
       <Contact theme={theme} />
+      <ScheduleWithGoogle theme={theme} /> 
     </>
   );
 }

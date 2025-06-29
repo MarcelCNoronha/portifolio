@@ -4,12 +4,48 @@ import React from "react";
 function Footer({ theme }) {
   return (
     // Usa classes dinâmicas para o background e a cor do texto baseadas no tema
-    <footer className={`py-8 shadow-lg ${theme === 'dark' ? 'bg-gray-900 text-gray-300' : 'bg-gray-100 text-gray-600'}`}>
+    <footer
+      className={`py-8 shadow-lg ${
+        theme === "dark"
+          ? "bg-gray-900 text-gray-300"
+          : "bg-gray-100 text-gray-600"
+      }`}
+    >
       <div className="container mx-auto px-4 text-center text-sm">
+        <div className="mb-4 text-center">
+          <p
+            className={`text-xl mb-2 ${
+              theme === "dark" ? "text-gray-300" : "text-gray-700"
+            }`}
+          >
+            📞{" "}
+            <a
+              href="tel:+5531XXXX-XXXX"
+              className="hover:underline text-blue-600"
+            >
+              (31) 97153-1429
+            </a>
+          </p>
+          <p
+            className={`text-xl mb-2 ${
+              theme === "dark" ? "text-gray-300" : "text-gray-700"
+            }`}
+          >
+            📧{" "}
+            <a
+              href="mailto:contato@assessoriadigital.com.br"
+              className="hover:underline text-blue-600"
+            >
+              contato@assessoriadigital.com.br
+            </a>
+          </p>
+        </div>
         {/* Informações de Copyright */}
         <p className="mb-4">
           &copy; {new Date().getFullYear()}{" "}
-          <strong className={`${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
+          <strong
+            className={`${theme === "dark" ? "text-white" : "text-gray-900"}`}
+          >
             [Assessoria Digital]
           </strong>{" "}
           - Todos os direitos reservados.
@@ -19,13 +55,21 @@ function Footer({ theme }) {
         <div className="flex justify-center space-x-6 mb-4">
           <a
             href="#"
-            className={`hover:text-white transition-colors duration-200 ${theme === 'dark' ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'}`}
+            className={`hover:text-white transition-colors duration-200 ${
+              theme === "dark"
+                ? "text-gray-300 hover:text-blue-400"
+                : "text-gray-600 hover:text-blue-600"
+            }`}
           >
             Política de Privacidade
           </a>
           <a
             href="#"
-            className={`hover:text-white transition-colors duration-200 ${theme === 'dark' ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'}`}
+            className={`hover:text-white transition-colors duration-200 ${
+              theme === "dark"
+                ? "text-gray-300 hover:text-blue-400"
+                : "text-gray-600 hover:text-blue-600"
+            }`}
           >
             Termos de Uso
           </a>
@@ -36,7 +80,11 @@ function Footer({ theme }) {
           {/* Ícone do LinkedIn */}
           <a
             href="https://www.linkedin.com/in/marcel-cardoso-de-noronha-dev/"
-            className={`${theme === 'dark' ? 'text-gray-400 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors duration-200`}
+            className={`${
+              theme === "dark"
+                ? "text-gray-400 hover:text-blue-400"
+                : "text-gray-600 hover:text-blue-600"
+            } transition-colors duration-200`}
           >
             <svg
               className="w-6 h-6"
@@ -55,7 +103,11 @@ function Footer({ theme }) {
           {/* Ícone do GitHub */}
           <a
             href="https://github.com/MarcelCNoronha"
-            className={`${theme === 'dark' ? 'text-gray-400 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors duration-200`}
+            className={`${
+              theme === "dark"
+                ? "text-gray-400 hover:text-blue-400"
+                : "text-gray-600 hover:text-blue-600"
+            } transition-colors duration-200`}
           >
             <svg
               className="w-6 h-6"

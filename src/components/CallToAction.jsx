@@ -4,11 +4,17 @@ import React from "react";
 function CallToAction({ theme, title, description, buttonText, buttonLink }) {
   return (
     <div
-      className={`p-8 rounded-xl shadow-md max-w-4xl mx-auto ${
+      className={`p-8 my-4 rounded-xl shadow-md max-w-4xl mx-auto ${
         theme === "dark" ? "bg-blue-900" : "bg-blue-50"
       }`}
     >
-      <h3 className="text-2xl font-bold text-blue-700 mb-4">{title}</h3>
+      <h3
+        className={`text-2xl font-bold mb-4 ${
+          theme === "dark" ? "text-blue-300" : "text-blue-700"
+        }`}
+      >
+        {title}
+      </h3>
       <p className={`mb-6 ${theme === "dark" ? "text-gray-300" : "text-gray-700"}`}>
         {description}
       </p>
