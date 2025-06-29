@@ -1,9 +1,8 @@
-// src/components/Projects.jsx
 import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from "react-responsive-carousel";
-import projectsData from "../data/projectsData"; // Import your project data
-import CallToAction from "./CallToAction"; // Import the reusable CTA
+import projectsData from "../data/projectsData"; 
+import CallToAction from "./CallToAction";
 
 function Projects({ theme }) {
   return (
@@ -32,7 +31,6 @@ function Projects({ theme }) {
           clientes em Viçosa e região a alcançar seus objetivos digitais.
         </p>
 
-        {/* Carousel for Projects */}
         <div className="max-w-4xl mx-auto">
           <Carousel
             swipeable={true} // deixar true para permitir swipe horizontal

@@ -1,4 +1,3 @@
-// src/components/Home.jsx
 import React from "react";
 import About from "../components/About";
 import Projects from "../components/Projects";
@@ -22,15 +21,16 @@ function Home({ theme }) {
               theme === "dark" ? "text-gray-100" : "text-gray-900"
             }`}
           >
-            Bem-vindo à Assessoria Digital Viçosa
+            Bem-vindo à Assessoria Digital!
           </h2>
           <p
             className={`text-lg md:text-xl mb-10 max-w-2xl mx-auto opacity-90 ${
               theme === "dark" ? "text-gray-300" : "text-gray-700"
             }`}
           >
-            Impulsione sua presença digital e alcance novos clientes em Viçosa,
-            MG, com soluções personalizadas.
+            Sou especialista em marketing e tecnologia, de Viçosa-MG.
+            Ajudamos o seu negócio a conectar-se ao futuro, aumentando a
+            presença online e conquistando mais clientes.
           </p>
           <a
             href="#contact-page"

@@ -1,4 +1,3 @@
-// src/components/CallToAction.jsx
 import React from "react";
 
 function CallToAction({ theme, title, description, buttonText, buttonLink }) {

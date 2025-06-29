@@ -1,6 +1,5 @@
 import React from "react";
 
-// O componente agora recebe 'theme' como prop
 function Footer({ theme }) {
   return (
     // Usa classes dinâmicas para o background e a cor do texto baseadas no tema
@@ -50,8 +49,6 @@ function Footer({ theme }) {
           </strong>{" "}
           - Todos os direitos reservados.
         </p>
-
-        {/* Links de Políticas */}
         <div className="flex justify-center space-x-6 mb-4">
           <a
             href="#"
@@ -75,9 +72,7 @@ function Footer({ theme }) {
           </a>
         </div>
 
-        {/* Ícones de Redes Sociais */}
         <div className="flex justify-center space-x-4">
-          {/* Ícone do LinkedIn */}
           <a
             href="https://www.linkedin.com/in/marcel-cardoso-de-noronha-dev/"
             className={`${
@@ -99,8 +94,6 @@ function Footer({ theme }) {
               />
             </svg>
           </a>
-
-          {/* Ícone do GitHub */}
           <a
             href="https://github.com/MarcelCNoronha"
             className={`${

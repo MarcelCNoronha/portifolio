@@ -38,7 +38,7 @@ function Header({ theme, toggleTheme }) {
         behavior: "smooth"
       });
     }
-    closeMobileMenu(); // Fecha o menu móvel após clicar
+    closeMobileMenu(); 
   };
 
   return (
@@ -49,20 +49,17 @@ function Header({ theme, toggleTheme }) {
       `}
     >
       <div className="container mx-auto flex justify-between items-center">
-        {/* Logo ou Nome da Empresa */}
         <a
-          href="#hero-section" // Link de âncora
+          href="#hero-section" 
           className={`text-2xl font-bold transition-colors duration-300
             ${theme === 'dark' ? 'text-white hover:text-blue-300' : 'text-blue-600 hover:text-blue-800'}
           `}
-          onClick={() => scrollToSection('hero-section')} // Usa a função de scroll suave
+          onClick={() => scrollToSection('hero-section')}
         >
           Assessoria Digital
         </a>
 
-        {/* Botão do Menu Hambúrguer (aparece apenas em telas pequenas) */}
         <div className="md:hidden flex items-center space-x-2">
-          {/* Botão de Alternar Tema para mobile */}
           <button
             onClick={toggleTheme}
             className={`p-2 rounded-full transition-colors duration-300
@@ -89,8 +86,6 @@ function Header({ theme, toggleTheme }) {
             </svg>
           </button>
         </div>
-
-        {/* Lista de Navegação (desktop) */}
         <ul className="hidden md:flex space-x-6 items-center">
           <li>
             <a
@@ -116,7 +111,7 @@ function Header({ theme, toggleTheme }) {
           </li>
           <li>
             <a
-              href="#projects-page" // Certifique-se que o ID existe no seu componente Projects
+              href="#projects-page" 
               className={`transition-colors duration-300 font-medium text-lg
                 ${theme === 'dark' ? 'text-white hover:text-blue-300' : 'text-gray-700 hover:text-blue-600'}
               `}
@@ -136,7 +131,6 @@ function Header({ theme, toggleTheme }) {
               Contato
             </a>
           </li>
-          {/* Botão de Alternar Tema para desktop */}
           <li>
             <button
               onClick={toggleTheme}
@@ -150,8 +144,6 @@ function Header({ theme, toggleTheme }) {
           </li>
         </ul>
       </div>
-
-      {/* Menu Móvel */}
       {isOpen && (
         <div
           className={`md:hidden absolute top-full left-0 w-full shadow-md

@@ -1,5 +1,5 @@
 import React from "react";
-import CallToAction from "./CallToAction"; // Import the reusable CTA
+import CallToAction from "./CallToAction";
 
 function About({ theme }) {
   return (
@@ -52,7 +52,23 @@ function About({ theme }) {
               estratégias digitais necessárias para crescer, inovar e se
               conectar de forma significativa com seu público-alvo. Fazemos isso
               com transparência, dedicação e foco em resultados mensuráveis.
+            <p
+              className={`leading-relaxed mb-4 ${
+                theme === "dark" ? "text-gray-300" : "text-gray-700"
+              }`}
+            >
+              Nossa missão é capacitar empresas locais com as ferramentas e
+              estratégias digitais necessárias para crescer, inovar e se
+              conectar de forma significativa com seu público-alvo. Fazemos isso
+              com transparência, dedicação e foco em resultados mensuráveis.
             </p>
+            <p
+              className={`leading-relaxed mb-6 ${
+                theme === "dark" ? "text-gray-300" : "text-gray-700"
+              }`}
+            >
+              Conheça mais sobre nossa expertise e trajetória profissional em
+              nosso perfil do LinkedIn:{" "}
             <p
               className={`leading-relaxed mb-6 ${
                 theme === "dark" ? "text-gray-300" : "text-gray-700"
