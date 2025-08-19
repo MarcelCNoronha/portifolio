@@ -19,7 +19,7 @@ function Contact({ theme }) {
           Fale Conosco
         </h2>
         <p
-          className={`text-lg leading-relaxed max-w-3xl mx-auto mb-10 ${
+          className={`text-lg leading-relaxed max-w-3xl mx-auto text-justify mb-10 ${
             theme === "dark" ? "text-gray-300" : "text-gray-700"
           }`}
         >

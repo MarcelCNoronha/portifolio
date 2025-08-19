@@ -9,30 +9,24 @@ function Home({ theme }) {
     <>
       <section
         id="hero-section"
-        className={`py-4 md:py-6 min-h-screen flex items-center justify-center ${
-          theme === "dark"
+        className={`py-4 md:py-6 min-h-screen flex items-center justify-center ${theme === "dark"
             ? "bg-gray-800 text-gray-200"
             : "bg-gray-50 text-gray-800"
-        }`}
+          }`}
       >
         <div className="container mx-auto px-4 text-center">
           <h2
-            className={`text-4xl md:text-6xl font-extrabold leading-tight mb-6 drop-shadow-lg ${
-              theme === "dark" ? "text-gray-100" : "text-gray-900"
-            }`}
+            className={`text-4xl md:text-6xl font-extrabold leading-tight mb-6 drop-shadow-lg ${theme === "dark" ? "text-gray-100" : "text-gray-900"
+              }`}
           >
             Bem-vindo à Assessoria Digital!
           </h2>
           <p
-            className={`text-lg md:text-xl mb-10 max-w-2xl mx-auto opacity-90 ${
-              theme === "dark" ? "text-gray-300" : "text-gray-700"
-            }`}
+            className={`text-lg md:text-xl mb-10 max-w-2xl mx-auto text-justify opacity-90 ${theme === "dark" ? "text-gray-300" : "text-gray-700"
+              }`}
           >
-            Sou especialista em tecnologia e marketing digital, atuando
-            diretamente de Viçosa-MG. Auxilio empresas na transformação digital,
-            conectando sistemas, otimizando processos e fortalecendo sua
-            presença online para atrair mais clientes e gerar resultados
-            concretos.
+            Precisa de apoio para utilizar e integrar ferramentas de tecnologia e vender online, seja em site próprio ou marketplaces?
+            Gostaria de otimizar seus processos e fortalecer sua presença digital para atrair mais clientes e gerar resultados?
           </p>
           <a
             href="#contact-page"
@@ -43,9 +37,9 @@ function Home({ theme }) {
         </div>
       </section>
       <About theme={theme} />
-      <Projects theme={theme} />
-      <Contact theme={theme} />
-      <ScheduleWithGoogle theme={theme} />
+      {/* <Projects theme={theme} /> */}
+      {/* <Contact theme={theme} /> */}
+      {/* <ScheduleWithGoogle theme={theme} /> */}
     </>
   );
 }

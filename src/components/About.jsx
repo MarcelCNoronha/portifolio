@@ -18,7 +18,7 @@ function About({ theme }) {
           Sobre Nós
         </h2>
         <p
-          className={`text-lg leading-relaxed max-w-3xl mx-auto mb-12 ${
+          className={`text-lg leading-relaxed max-w-3xl mx-auto text-justify mb-12 ${
             theme === "dark" ? "text-gray-300" : "text-gray-700"
           }`}
         >
@@ -29,21 +29,14 @@ function About({ theme }) {
           seu verdadeiro potencial.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center text-justify mb-16">
           <div className="text-left">
-            <h3
-              className={`text-2xl font-semibold mb-4 ${
-                theme === "dark" ? "text-gray-100" : "text-gray-900"
-              }`}
-            >
-              Nossa Missão
-            </h3>
             <p
               className={`leading-relaxed mb-4 ${
                 theme === "dark" ? "text-gray-300" : "text-gray-700"
               }`}
             >
-              Nossa missão é capacitar empresas locais com as ferramentas e estratégias digitais
+              Nossa missão é capacitar empresas com as ferramentas e estratégias digitais
               necessárias para crescer, inovar e se conectar de forma significativa com seu
               público-alvo. Fazemos isso com transparência, dedicação e foco em resultados
               mensuráveis.
@@ -65,13 +58,6 @@ function About({ theme }) {
               </a>
               .
             </p>
-            <h3
-              className={`text-2xl font-semibold mb-4 ${
-                theme === "dark" ? "text-gray-100" : "text-gray-900"
-              }`}
-            >
-              Nossos Valores
-            </h3>
             <ul
               className={`list-disc list-inside leading-relaxed space-y-2 ${
                 theme === "dark" ? "text-gray-300" : "text-gray-700"
@@ -101,7 +87,7 @@ function About({ theme }) {
           </div>
           <div>
             <img
-              src="https://placehold.co/600x400/a78bfa/ffffff?text=Nossa+Equipe"
+              src="https://avatars.githubusercontent.com/u/95543728?s=400&u=f9fe9aa3e68c81e07e0287a39b5ca711ef099530&v=4"
               alt="Imagem da equipe da assessoria digital"
               className="w-full h-auto rounded-xl shadow-lg"
             />
