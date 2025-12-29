@@ -62,7 +62,7 @@ function About() {
           title="Pronto para Alavancar Seu Negócio?"
           description="Entre em contato conosco hoje mesmo e descubra como podemos ajudar sua empresa a brilhar no ambiente digital de Viçosa!"
           buttonText="Fale Conosco"
-          buttonLink="#contact-page"
+          buttonLink="https://wa.me/31971531429?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços"
         />
       </div>
     </section>

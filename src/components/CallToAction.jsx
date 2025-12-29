@@ -6,10 +6,13 @@ function CallToAction({ title, description, buttonText, buttonLink }) {
       <h3 className="text-2xl font-bold mb-4 text-gray-100">{title}</h3>
       <p className="mb-6 text-gray-300">{description}</p>
       <a
-        href={buttonLink}
-        className="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 hover:scale-105 transition duration-300 ease-in-out transform focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-offset-2"
+        href={buttonLink || "https://wa.me/31971531429?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços."}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Falar no WhatsApp"
+        className="inline-flex items-center gap-3 bg-blue-600 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-blue-700 hover:scale-105 transition duration-300 ease-in-out transform focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-offset-2"
       >
-        {buttonText}
+        <span>{buttonText}</span>
       </a>
     </div>
   );
