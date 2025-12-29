@@ -7,7 +7,7 @@ const testimonials = [];
 function TestimonialsCarousel({ theme }) {
   return (
     <section className={`py-12 ${theme === "dark" ? "bg-gray-800" : "bg-gray-50"}`}>
-      <div className="container mx-auto px-4 text-center">
+      <div className="container mx-auto px-4 text-justify">
 
         <div className="max-w-3xl mx-auto">
           <Carousel showArrows={false} showThumbs={false} showStatus={false} infiniteLoop={true} autoPlay={true} interval={6000}>

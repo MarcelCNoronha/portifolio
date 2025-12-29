@@ -2,3 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global text alignment: center titles, justify body text */
+body {
+  text-align: justify;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  text-align: center;
+}

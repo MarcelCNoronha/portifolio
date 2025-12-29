@@ -86,7 +86,7 @@ function ServicesCarousel({ theme }) {
     }, []);
 
   return (
-    <div className="max-w-4xl mx-auto text-left">
+    <div className="max-w-4xl mx-auto text-justify">
       <Carousel
         className="services-carousel"
         showArrows={true}
@@ -102,7 +102,7 @@ function ServicesCarousel({ theme }) {
         {projectsData.map((service) => (
           <div
             key={service.id}
-            className={`rounded-xl shadow-lg p-6 flex flex-col items-center text-center mx-2 ${
+            className={`rounded-xl shadow-lg p-6 flex flex-col items-center text-justify mx-2 ${
               theme === "dark" ? "bg-gray-700" : "bg-white"
             }`}
             style={{ minHeight: '300px' }}
