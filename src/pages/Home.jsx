@@ -21,10 +21,10 @@ function Home({ theme }) {
       >
         <div className="container mx-auto px-4 text-center">
           <h1
-            className={`text-4xl md:text-6xl font-extrabold leading-tight mb-6 drop-shadow-lg ${theme === "dark" ? "text-gray-100" : "text-gray-900"
+            className={`text-4xl md:text-6xl font-extrabold leading-tight mt-12 mb-6 drop-shadow-lg ${theme === "dark" ? "text-gray-100" : "text-gray-900"
               }`}
           >
-            Assessoria para Implementação de Tecnologia
+            Implementação de Tecnologia
           </h1>
           <div className="max-w-3xl mx-auto">
             <p

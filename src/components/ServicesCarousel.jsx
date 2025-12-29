@@ -110,7 +110,7 @@ function ServicesCarousel({ theme }) {
             <div className="flex-shrink-0">
               <ServiceIcon icon={service.icon} theme={theme} />
             </div>
-            <div className="mt-4">
+            <div className="mt-2">
               <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
               <p className={`${theme === "dark" ? "text-gray-300" : "text-gray-600"}`}>{service.description}</p>
             </div>
