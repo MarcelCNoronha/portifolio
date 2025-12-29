@@ -37,9 +37,9 @@ function Home({ theme }) {
         </div>
       </section>
       <About theme={theme} />
-      {/* <Projects theme={theme} /> */}
-      {/* <Contact theme={theme} /> */}
-      {/* <ScheduleWithGoogle theme={theme} /> */}
+      { <Projects theme={theme} /> }
+      { <Contact theme={theme} /> }
+      { <ScheduleWithGoogle theme={theme} /> }
     </>
   );
 }

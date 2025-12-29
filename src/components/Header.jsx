@@ -109,7 +109,7 @@ function Header({ theme, toggleTheme }) {
               Sobre
             </a>
           </li>
-          {/* <li>
+          <li>
             <a
               href="#projects-page" 
               className={`transition-colors duration-300 font-medium text-lg
@@ -130,7 +130,7 @@ function Header({ theme, toggleTheme }) {
             >
               Contato
             </a>
-          </li> */}
+          </li>
           <li>
             <button
               onClick={toggleTheme}
