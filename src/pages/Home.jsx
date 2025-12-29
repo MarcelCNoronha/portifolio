@@ -5,7 +5,7 @@ import Contact from "../components/Contact";
 import ScheduleWithGoogle from "../components/ScheduleWithGoogle";
 import LeadForm from "../components/LeadForm";
 
-function Home({ theme }) {
+function Home() {
   // The LeadForm is no longer triggered from the hero, but we can keep the logic
   // in case it's used elsewhere in the future.
   const [isLeadOpen, setIsLeadOpen] = useState(false);
@@ -14,23 +14,14 @@ function Home({ theme }) {
     <>
       <section
         id="hero-section"
-        className={`py-4 md:py-6 min-h-screen flex items-center justify-center ${theme === "dark"
-            ? "bg-gray-800 text-gray-200"
-            : "bg-gray-50 text-gray-800"
-          }`}
+        className="py-4 md:py-6 min-h-screen flex items-center justify-center bg-metallic-purple text-gray-200"
       >
         <div className="container mx-auto px-4 text-center">
-          <h1
-            className={`text-4xl md:text-6xl font-extrabold leading-tight mt-12 mb-6 drop-shadow-lg ${theme === "dark" ? "text-gray-100" : "text-gray-900"
-              }`}
-          >
+          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mt-12 mb-6 drop-shadow-lg text-gray-100">
             Implementação de Tecnologia
           </h1>
           <div className="max-w-3xl mx-auto">
-            <p
-              className={`text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90 ${theme === "dark" ? "text-gray-300" : "text-gray-700"
-                }`}
-            >
+            <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90 text-gray-300">
               Analisamos suas necessidades e implementamos as melhores ferramentas para otimizar seus processos e aumentar suas vendas.
             </p>
             {/* The user will add a 'banner.png' file to the 'public/images' directory. */}
@@ -49,10 +40,10 @@ function Home({ theme }) {
       </section>
       
       {/* --- Section Order Changed --- */}
-      <Projects theme={theme} />
-      <About theme={theme} />
-      <Contact theme={theme} />
-      {/* <ScheduleWithGoogle theme={theme} /> */}
+      <Projects />
+      <About />
+      <Contact />
+      {/* <ScheduleWithGoogle /> */}
 
       <LeadForm open={isLeadOpen} onClose={() => setIsLeadOpen(false)} />
     </>

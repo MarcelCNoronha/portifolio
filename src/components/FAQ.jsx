@@ -19,16 +19,16 @@ const faqs = [
   },
 ];
 
-function FAQ({ theme }) {
+function FAQ() {
   return (
-    <section id="faq" className={`py-12 ${theme === "dark" ? "bg-gray-900 text-gray-200" : "bg-white text-gray-800"}`}>
+    <section id="faq" className="py-12 bg-metallic-purple text-gray-200">
       <div className="container mx-auto px-4">
-        <h3 className={`text-2xl font-bold mb-6 ${theme === "dark" ? "text-gray-100" : "text-gray-900"}`}>Perguntas Frequentes</h3>
+        <h3 className="text-2xl font-bold mb-6 text-gray-100">Perguntas Frequentes</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {faqs.map((f, idx) => (
-            <div key={idx} className={`p-4 rounded-lg shadow-sm ${theme === "dark" ? "bg-gray-800" : "bg-gray-50"}`}>
+            <div key={idx} className="p-4 rounded-lg shadow-sm bg-metallic-purple-dark text-gray-100">
               <p className="font-semibold mb-2">{f.question}</p>
-              <p className="text-sm text-gray-600 dark:text-gray-300 text-justify">{f.answer}</p>
+              <p className="text-sm text-gray-300 text-justify">{f.answer}</p>
             </div>
           ))}
         </div>

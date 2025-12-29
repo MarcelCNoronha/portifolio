@@ -4,31 +4,14 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 function App() {
-  const [theme, setTheme] = useState("light");
-
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) {
-      setTheme(savedTheme);
-    }
-  }, []);
-
-  const toggleTheme = () => {
-    setTheme((prevTheme) => {
-      const newTheme = prevTheme === "light" ? "dark" : "light";
-      localStorage.setItem("theme", newTheme); 
-      return newTheme;
-    });
-  };
-
   return (
-    <div className={`app ${theme}`}>
+    <div className="app">
       <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:bg-white focus:px-3 focus:py-2 focus:rounded focus:shadow">Pular para o conteúdo</a>
-      <Header theme={theme} toggleTheme={toggleTheme} />
+      <Header />
       <main id="main-content">
-        <Home theme={theme} />{" "}
+        <Home />
       </main>
-      <Footer theme={theme} />
+      <Footer />
       <a
         href="https://wa.me/31971531429?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços."
         target="_blank"

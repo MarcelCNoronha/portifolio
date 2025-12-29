@@ -1,27 +1,12 @@
 import React from "react";
 import CallToAction from "./CallToAction";
 
-function About({ theme }) {
+function About() {
   return (
-    <section
-      id="profile-page"
-      className={`min-h-screen flex items-center justify-center ${
-        theme === "dark" ? "bg-gray-800 text-gray-200" : "bg-gray-50 text-gray-800"
-      }`}
-    >
+    <section id="profile-page" className="min-h-screen flex items-center justify-center bg-metallic-purple text-gray-200">
       <div className="container mx-auto px-4 text-center">
-        <h2
-          className={`text-3xl md:text-4xl font-bold mb-8 ${
-            theme === "dark" ? "text-gray-100" : "text-gray-900"
-          }`}
-        >
-          Sobre Nós
-        </h2>
-        <p
-          className={`text-lg leading-relaxed max-w-3xl mx-auto text-center md:text-justify mb-12 ${
-            theme === "dark" ? "text-gray-300" : "text-gray-700"
-          }`}
-        >
+        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-gray-100">Sobre Nós</h2>
+        <p className="text-lg leading-relaxed max-w-3xl mx-auto text-center md:text-justify mb-12 text-gray-300">
           Na{" "}
           <strong className="text-blue-600">Assessoria Digital</strong>, somos apaixonados por
           transformar negócios através do poder da tecnologia. Acreditamos que cada empresa,
@@ -32,20 +17,14 @@ function About({ theme }) {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center text-center md:text-justify mb-16">
           <div className="text-center md:text-left">
             <p
-              className={`leading-relaxed mb-4 text-justify ${
-                theme === "dark" ? "text-gray-300" : "text-gray-700"
-              }`}
+              className="leading-relaxed mb-4 text-justify text-gray-300"
             >
               Somos uma **assessoria digital** que trabalha junto com você — entregamos soluções
               práticas, iterativas e com acompanhamento contínuo. Nosso foco é transformar sua
               presença online por meio de ações que gerem impacto real e mensurável.
             </p>
            
-            <ul
-              className={`list-disc list-inside leading-relaxed space-y-2 ${
-                theme === "dark" ? "text-gray-300" : "text-gray-700"
-              }`}
-            >
+            <ul className="list-disc list-inside leading-relaxed space-y-2 text-justify md:text-left text-gray-300">
               <li>
                 <strong>Inovação:</strong> Estamos sempre atentos às tendências e tecnologias mais
                 atuais para entregar soluções criativas e eficazes.
@@ -80,7 +59,6 @@ function About({ theme }) {
         </div>
 
         <CallToAction
-          theme={theme}
           title="Pronto para Alavancar Seu Negócio?"
           description="Entre em contato conosco hoje mesmo e descubra como podemos ajudar sua empresa a brilhar no ambiente digital de Viçosa!"
           buttonText="Fale Conosco"

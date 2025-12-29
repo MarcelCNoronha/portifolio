@@ -1,27 +1,12 @@
 // src/components/ScheduleWithGoogleEmbed.jsx
 import React from "react";
 
-function ScheduleWithGoogleEmbed({ theme }) {
+function ScheduleWithGoogleEmbed() {
   return (
-    <section
-      id="schedule"
-      className={`min-h-[70vh] flex flex-col items-center justify-center px-4 py-16 ${
-        theme === "dark" ? "bg-gray-900 text-gray-100" : "bg-gray-50 text-gray-800"
-      }`}
-    >
+    <section id="schedule" className="min-h-[70vh] flex flex-col items-center justify-center px-4 py-16 bg-metallic-purple text-gray-100">
       <div className="container mx-auto px-4 text-center max-w-3xl mb-12">
-        <h2
-          className={`text-3xl md:text-4xl font-bold mb-6 ${
-            theme === "dark" ? "text-gray-100" : "text-gray-900"
-          }`}
-        >
-          Agende uma reunião conosco
-        </h2>
-        <p
-          className={`text-lg leading-relaxed ${
-            theme === "dark" ? "text-gray-300" : "text-gray-700"
-          }`}
-        >
+        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-100">Agende uma reunião conosco</h2>
+        <p className="text-lg leading-relaxed text-gray-300">
           Tem um projeto em mente, dúvida ou quer uma análise personalizada para
           o seu negócio em Viçosa? Escolha o melhor horário para conversar
           diretamente com a nossa equipe usando a agenda abaixo.
@@ -29,7 +14,7 @@ function ScheduleWithGoogleEmbed({ theme }) {
       </div>
 
       {/* Container para o iframe sem fundo e cor do tema escuro */}
-      <div className="max-w-4xl w-full rounded-xl shadow-2xl bg-white dark:bg-gray-800 text-black dark:text-gray-200 p-6 flex flex-col items-center text-center">
+      <div className="max-w-4xl w-full rounded-xl shadow-2xl bg-metallic-purple-dark text-gray-100 p-6 flex flex-col items-center text-center">
         <p className="mb-4">Escolha um horário para conversar conosco. O agendamento será aberto no Google Calendar.</p>
         <a
           href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1_MpfJrNnqcsadZ7t96SjV2FyVLASGBXabDBe5_ekdvNfmBJr88FOrgas0uVU56xp_pwikVUDx?gv=true"

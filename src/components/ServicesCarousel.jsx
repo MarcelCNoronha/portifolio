@@ -3,9 +3,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import projectsData from "../data/projectsData";
 
-const ServiceIcon = ({ icon, theme }) => {
-  const iconColor = theme === "dark" ? "text-blue-400" : "text-blue-600";
-  const iconClass = `w-12 h-12 mb-4 ${iconColor}`;
+const ServiceIcon = ({ icon }) => {
+  const iconClass = `w-12 h-12 mb-4 text-blue-400`;
 
   switch (icon) {
     case "website":
@@ -59,7 +58,7 @@ const ServiceIcon = ({ icon, theme }) => {
 };
 
 
-function ServicesCarousel({ theme }) {
+function ServicesCarousel() {
     const [centerSlidePercentage, setCenterSlidePercentage] = useState(33.3);
     const [isCenterMode, setIsCenterMode] = useState(true);
 
@@ -102,16 +101,14 @@ function ServicesCarousel({ theme }) {
         {projectsData.map((service) => (
           <div
             key={service.id}
-            className={`rounded-xl shadow-lg p-6 flex flex-col items-center justify-center text-justify mx-2 min-h-[300px] ${
-              theme === "dark" ? "bg-gray-700" : "bg-white"
-            }`}>
+            className="rounded-xl shadow-lg p-6 flex flex-col items-center justify-center text-justify mx-2 min-h-[300px] bg-metallic-purple-dark text-gray-100">
 
             <div className="flex-shrink-0">
-              <ServiceIcon icon={service.icon} theme={theme} />
+              <ServiceIcon icon={service.icon} />
             </div>
             <div className="mt-2">
               <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-              <p className={`${theme === "dark" ? "text-gray-300" : "text-gray-600"}`}>{service.description}</p>
+              <p className="text-gray-300">{service.description}</p>
             </div>
           </div>
         ))}

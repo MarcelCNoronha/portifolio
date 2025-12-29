@@ -13,3 +13,32 @@ body h5,
 body h6 {
   text-align: center;
 }
+
+/* Metallic purple background utility */
+.bg-metallic-purple {
+  background-color: #4b1f6b;
+  background-image:
+    radial-gradient(30% 20% at 10% 10%, rgba(255,255,255,0.12), transparent 10%),
+    linear-gradient(135deg, #6b21a8 0%, #7c3aed 45%, #2b0f44 100%);
+  background-blend-mode: overlay;
+  color: #f5f3ff;
+  position: relative;
+  overflow: hidden;
+}
+.bg-metallic-purple::before {
+  content: "";
+  position: absolute;
+  inset: -20% 0;
+  transform: rotate(-20deg);
+  background: linear-gradient(90deg, rgba(255,255,255,0.10), rgba(255,255,255,0.02), rgba(255,255,255,0.10));
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+/* Darker variant for headers/footers/inputs */
+.bg-metallic-purple-dark {
+  background-color: #2b0f44;
+  background-image: linear-gradient(135deg, #2b0f44 0%, #3b0f57 100%);
+  color: #f5f3ff;
+}
+
