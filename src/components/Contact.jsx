@@ -28,7 +28,7 @@ function Contact({ theme }) {
           contato pelos nossos canais.
         </p>
 
-        <div className="max-w-xl mx-auto p-6 rounded-xl shadow-2xl bg-white text-black">
+        <div className="max-w-xl mx-auto p-6 rounded-xl shadow-2xl bg-white dark:bg-gray-700 text-black">
           <p className="mb-4 text-center text-gray-700 dark:text-gray-300">Nosso formulário de contato está disponível externamente. Clique no botão abaixo para abrir e preencher com segurança.</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a

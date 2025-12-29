@@ -28,7 +28,7 @@ function FAQ({ theme }) {
           {faqs.map((f, idx) => (
             <div key={idx} className={`p-4 rounded-lg shadow-sm ${theme === "dark" ? "bg-gray-800" : "bg-gray-50"}`}>
               <p className="font-semibold mb-2">{f.question}</p>
-              <p className="text-sm text-gray-600 dark:text-gray-300">{f.answer}</p>
+              <p className="text-sm text-gray-600 dark:text-gray-300 text-justify">{f.answer}</p>
             </div>
           ))}
         </div>

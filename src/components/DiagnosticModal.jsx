@@ -55,8 +55,8 @@ function DiagnosticModal({ open, onClose }) {
           ✕
         </button>
 
-        <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-gray-100">Solicite seu Diagnóstico Gratuito</h3>
-        <p className="text-sm mb-4 text-gray-600 dark:text-gray-300">Receba 3 recomendações práticas para sua presença digital em até 48h.</p>
+        <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-gray-100">Diagnóstico Gratuito de Presença Digital</h3>
+        <p className="text-sm mb-4 text-gray-600 dark:text-gray-300 text-justify">Receba 3 recomendações práticas em até 48h — sem custo.</p>
 
         <form onSubmit={handleSubmit} className="space-y-3">
           <label className="block">
@@ -92,10 +92,10 @@ function DiagnosticModal({ open, onClose }) {
             />
           </label>
 
-          <div className="flex items-center justify-between space-x-3">
+          <div className="flex flex-col sm:flex-row items-center justify-between space-y-3 sm:space-y-0 sm:space-x-3">
             <button
               type="submit"
-              className="inline-block bg-blue-600 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-700 transition-colors disabled:opacity-50"
+              className="w-full sm:w-auto inline-block bg-blue-600 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-700 transition-colors disabled:opacity-50"
             >
               Enviar por Email
             </button>
@@ -103,7 +103,7 @@ function DiagnosticModal({ open, onClose }) {
               href={`https://wa.me/5531971531429?text=${encodeURIComponent("Olá, gostaria de solicitar um diagnóstico gratuito de presença digital.")}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-green-500 text-white font-bold py-2 px-4 rounded-full hover:bg-green-600 transition-colors"
+              className="w-full sm:w-auto text-center inline-block bg-green-500 text-white font-bold py-2 px-4 rounded-full hover:bg-green-600 transition-colors"
             >
               Enviar por WhatsApp
             </a>

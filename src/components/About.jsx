@@ -32,7 +32,7 @@ function About({ theme }) {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center text-center md:text-justify mb-16">
           <div className="text-center md:text-left">
             <p
-              className={`leading-relaxed mb-4 ${
+              className={`leading-relaxed mb-4 text-justify ${
                 theme === "dark" ? "text-gray-300" : "text-gray-700"
               }`}
             >
@@ -74,7 +74,7 @@ function About({ theme }) {
               alt="Nossa Equipe"
               loading="lazy"
               decoding="async"
-              className="w-64 h-auto rounded-xl shadow-lg"
+              className="w-full max-w-sm h-auto rounded-xl shadow-lg"
             />
           </div>
         </div>
