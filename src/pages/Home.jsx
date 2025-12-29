@@ -52,7 +52,7 @@ function Home({ theme }) {
       <Projects theme={theme} />
       <About theme={theme} />
       <Contact theme={theme} />
-      <ScheduleWithGoogle theme={theme} />
+      {/* <ScheduleWithGoogle theme={theme} /> */}
 
       <LeadForm open={isLeadOpen} onClose={() => setIsLeadOpen(false)} />
     </>

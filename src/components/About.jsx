@@ -70,7 +70,7 @@ function About({ theme }) {
           </div>
           <div className="flex justify-center md:justify-end">
             <img
-              src="https://placehold.co/600x400/0ea5e9/ffffff?text=Nossa+Equipe"
+              src="https://avatars.githubusercontent.com/u/95543728?s=400&u=f9fe9aa3e68c81e07e0287a39b5ca711ef099530&v=4"
               alt="Nossa Equipe"
               loading="lazy"
               decoding="async"
