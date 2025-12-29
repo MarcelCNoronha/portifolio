@@ -102,11 +102,10 @@ function ServicesCarousel({ theme }) {
         {projectsData.map((service) => (
           <div
             key={service.id}
-            className={`rounded-xl shadow-lg p-6 flex flex-col items-center text-justify mx-2 ${
+            className={`rounded-xl shadow-lg p-6 flex flex-col items-center justify-center text-justify mx-2 min-h-[300px] ${
               theme === "dark" ? "bg-gray-700" : "bg-white"
-            }`}
-            style={{ minHeight: '300px' }}
-          >
+            }`}>
+
             <div className="flex-shrink-0">
               <ServiceIcon icon={service.icon} theme={theme} />
             </div>
