@@ -3,7 +3,7 @@ import React from "react";
 function CallToAction({ theme, title, description, buttonText, buttonLink }) {
   return (
     <div
-      className={`p-8 my-4 rounded-xl shadow-md max-w-4xl mx-auto ${
+      className={`p-8 my-4 rounded-xl shadow-md max-w-4xl mx-auto text-center ${
         theme === "dark" ? "bg-blue-900" : "bg-blue-50"
       }`}
     >
@@ -19,7 +19,7 @@ function CallToAction({ theme, title, description, buttonText, buttonLink }) {
       </p>
       <a
         href={buttonLink}
-        className="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 hover:scale-105 transition duration-300 ease-in-out transform"
+        className="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 hover:scale-105 transition duration-300 ease-in-out transform focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-offset-2"
       >
         {buttonText}
       </a>

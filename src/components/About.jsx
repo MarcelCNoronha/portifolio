@@ -18,7 +18,7 @@ function About({ theme }) {
           Sobre Nós
         </h2>
         <p
-          className={`text-lg leading-relaxed max-w-3xl mx-auto text-justify mb-12 ${
+          className={`text-lg leading-relaxed max-w-3xl mx-auto text-center md:text-justify mb-12 ${
             theme === "dark" ? "text-gray-300" : "text-gray-700"
           }`}
         >
@@ -29,35 +29,18 @@ function About({ theme }) {
           seu verdadeiro potencial.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center text-justify mb-16">
-          <div className="text-left">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center text-center md:text-justify mb-16">
+          <div className="text-center md:text-left">
             <p
               className={`leading-relaxed mb-4 ${
                 theme === "dark" ? "text-gray-300" : "text-gray-700"
               }`}
             >
-              Nossa missão é capacitar empresas com as ferramentas e estratégias digitais
-              necessárias para crescer, inovar e se conectar de forma significativa com seu
-              público-alvo. Fazemos isso com transparência, dedicação e foco em resultados
-              mensuráveis.
+              Somos uma **assessoria digital** que trabalha junto com você — entregamos soluções
+              práticas, iterativas e com acompanhamento contínuo. Nosso foco é transformar sua
+              presença online por meio de ações que gerem impacto real e mensurável.
             </p>
-            <p
-              className={`leading-relaxed mb-6 ${
-                theme === "dark" ? "text-gray-300" : "text-gray-700"
-              }`}
-            >
-              Conheça mais sobre nossa expertise e trajetória profissional em nosso perfil do
-              LinkedIn:{" "}
-              <a
-                href="https://www.linkedin.com/in/marcel-cardoso-de-noronha-dev/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline font-semibold"
-              >
-                Marcel Cardoso de Noronha
-              </a>
-              .
-            </p>
+           
             <ul
               className={`list-disc list-inside leading-relaxed space-y-2 ${
                 theme === "dark" ? "text-gray-300" : "text-gray-700"
@@ -68,16 +51,16 @@ function About({ theme }) {
                 atuais para entregar soluções criativas e eficazes.
               </li>
               <li>
-                <strong>Resultados:</strong> Focamos em gerar impacto real para o crescimento dos
-                nossos clientes, com metas e entregas claras.
+                <strong>Assessoria contínua:</strong> Atuação próxima ao cliente, com acompanhamento
+                e otimizações conforme o projeto evolui.
               </li>
               <li>
                 <strong>Transparência:</strong> Valorizamos uma comunicação direta, honesta e
                 alinhada em todas as etapas do projeto.
               </li>
               <li>
-                <strong>Parceria:</strong> Atuamos lado a lado com nossos clientes, construindo
-                relações de confiança e colaboração a longo prazo.
+                <strong>Parceria:</strong> Trabalhamos lado a lado com sua equipe, combinando
+                conhecimento técnico com o contexto do seu negócio.
               </li>
               <li>
                 <strong>Excelência:</strong> Buscamos sempre o mais alto nível de qualidade, com
@@ -85,11 +68,13 @@ function About({ theme }) {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="flex justify-center md:justify-end">
             <img
-              src="https://avatars.githubusercontent.com/u/95543728?s=400&u=f9fe9aa3e68c81e07e0287a39b5ca711ef099530&v=4"
-              alt="Imagem da equipe da assessoria digital"
-              className="w-full h-auto rounded-xl shadow-lg"
+              src="https://placehold.co/600x400/0ea5e9/ffffff?text=Nossa+Equipe"
+              alt="Nossa Equipe"
+              loading="lazy"
+              decoding="async"
+              className="w-64 h-auto rounded-xl shadow-lg"
             />
           </div>
         </div>

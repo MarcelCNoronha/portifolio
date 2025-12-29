@@ -43,6 +43,8 @@ function Header({ theme, toggleTheme }) {
 
   return (
     <nav
+      role="navigation"
+      aria-label="Navegação principal"
       className={`fixed top-0 left-0 w-full p-4 shadow-lg z-50 transition-transform duration-300
         ${showHeader ? 'translate-y-0' : '-translate-y-full'}
         ${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}
@@ -70,7 +72,7 @@ function Header({ theme, toggleTheme }) {
             {theme === 'dark' ? '☀️' : '🌙'}
           </button>
 
-          <button onClick={() => setIsOpen(!isOpen)} className="text-white focus:outline-none">
+          <button onClick={() => setIsOpen(!isOpen)} className="text-white focus:ring-2 focus:ring-blue-300 rounded">
             <svg
               className={`w-8 h-8 ${theme === 'dark' ? 'text-white' : 'text-gray-800'}`}
               fill="none"
@@ -117,7 +119,7 @@ function Header({ theme, toggleTheme }) {
               `}
               onClick={() => scrollToSection('projects-page')}
             >
-              Projetos
+              Serviços
             </a>
           </li>
           <li>

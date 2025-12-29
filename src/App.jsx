@@ -23,8 +23,9 @@ function App() {
 
   return (
     <div className={`app ${theme}`}>
+      <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:bg-white focus:px-3 focus:py-2 focus:rounded focus:shadow">Pular para o conteúdo</a>
       <Header theme={theme} toggleTheme={toggleTheme} />
-      <main>
+      <main id="main-content">
         <Home theme={theme} />{" "}
       </main>
       <Footer theme={theme} />

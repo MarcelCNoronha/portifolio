@@ -52,6 +52,7 @@ function Footer({ theme }) {
         <div className="flex justify-center space-x-6 mb-4">
           <a
             href="#"
+            aria-label="Política de Privacidade"
             className={`hover:text-white transition-colors duration-200 ${
               theme === "dark"
                 ? "text-gray-300 hover:text-blue-400"
@@ -62,6 +63,7 @@ function Footer({ theme }) {
           </a>
           <a
             href="#"
+            aria-label="Termos de Uso"
             className={`hover:text-white transition-colors duration-200 ${
               theme === "dark"
                 ? "text-gray-300 hover:text-blue-400"
@@ -75,6 +77,7 @@ function Footer({ theme }) {
         <div className="flex justify-center space-x-4">
           <a
             href="https://www.linkedin.com/in/marcel-cardoso-de-noronha-dev/"
+            aria-label="LinkedIn"
             className={`${
               theme === "dark"
                 ? "text-gray-400 hover:text-blue-400"
@@ -96,6 +99,7 @@ function Footer({ theme }) {
           </a>
           <a
             href="https://github.com/MarcelCNoronha"
+            aria-label="GitHub"
             className={`${
               theme === "dark"
                 ? "text-gray-400 hover:text-blue-400"

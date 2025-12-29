@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import About from "../components/About";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import ScheduleWithGoogle from "../components/ScheduleWithGoogle";
+import DiagnosticModal from "../components/DiagnosticModal";
+import LeadForm from "../components/LeadForm";
 
 function Home({ theme }) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  // The LeadForm is no longer triggered from the hero, but we can keep the logic
+  // in case it's used elsewhere in the future.
+  const [isLeadOpen, setIsLeadOpen] = useState(false);
+
   return (
     <>
       <section
@@ -15,31 +22,42 @@ function Home({ theme }) {
           }`}
       >
         <div className="container mx-auto px-4 text-center">
-          <h2
+          <h1
             className={`text-4xl md:text-6xl font-extrabold leading-tight mb-6 drop-shadow-lg ${theme === "dark" ? "text-gray-100" : "text-gray-900"
               }`}
           >
-            Bem-vindo à Assessoria Digital!
-          </h2>
-          <p
-            className={`text-lg md:text-xl mb-10 max-w-2xl mx-auto text-justify opacity-90 ${theme === "dark" ? "text-gray-300" : "text-gray-700"
-              }`}
-          >
-            Precisa de apoio para utilizar e integrar ferramentas de tecnologia e vender online, seja em site próprio ou marketplaces?
-            Gostaria de otimizar seus processos e fortalecer sua presença digital para atrair mais clientes e gerar resultados?
-          </p>
-          <a
-            href="#contact-page"
-            className="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 hover:scale-105 transition duration-300 ease-in-out transform"
-          >
-            Solicite uma Análise!
-          </a>
+            Diagnóstico Gratuito de Presença Digital
+          </h1>
+          <div className="max-w-3xl mx-auto">
+            <p
+              className={`text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90 ${theme === "dark" ? "text-gray-300" : "text-gray-700"
+                }`}
+            >
+              Receba 3 recomendações práticas em até 48h — sem custo. Descubra oportunidades de otimização para vender mais online.
+            </p>
+            {/* The user will add a 'banner.png' file to the 'public/images' directory. */}
+            <img src="/images/banner.png" alt="Assessoria Digital - Banner Principal" loading="lazy" decoding="async" className="w-full h-auto rounded-md shadow-lg" />
+          </div>
+
+          <div className="flex items-center justify-center mt-8 md:mt-10">
+            <button
+              onClick={() => setIsModalOpen(true)}
+              className="inline-block bg-blue-600 text-white font-bold py-4 px-8 text-lg rounded-full shadow-lg hover:bg-blue-700 hover:scale-105 transition duration-300 ease-in-out transform focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-offset-2"
+            >
+              Solicitar Diagnóstico Gratuito
+            </button>
+          </div>
         </div>
       </section>
+      
+      {/* --- Section Order Changed --- */}
+      <Projects theme={theme} />
       <About theme={theme} />
-      { <Projects theme={theme} /> }
-      { <Contact theme={theme} /> }
-      { <ScheduleWithGoogle theme={theme} /> }
+      <Contact theme={theme} />
+      <ScheduleWithGoogle theme={theme} />
+
+      <DiagnosticModal open={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      <LeadForm open={isLeadOpen} onClose={() => setIsLeadOpen(false)} />
     </>
   );
 }

@@ -29,16 +29,17 @@ function ScheduleWithGoogleEmbed({ theme }) {
       </div>
 
       {/* Container para o iframe sem fundo e cor do tema escuro */}
-      <div className="max-w-4xl w-full rounded-xl shadow-2xl overflow-hidden bg-white text-black">
-        <iframe
-          src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1_MpfJrNnqcsadZ7t96SjV2FyVLASGBXabDBe5_ekdvNfmBJr88FOrgas0uVU56xp_pwikVUDx?gv=true"
-          style={{ border: 0 }}
-          width="100%"
-          height="600"
-          frameBorder="0"
-          title="Agendamento Google Calendar"
-          scrolling="no"
-        />
+      <div className="max-w-4xl w-full rounded-xl shadow-2xl bg-white dark:bg-gray-800 text-black dark:text-gray-200 p-6 flex flex-col items-center text-center">
+        <p className="mb-4">Escolha um horário para conversar conosco. O agendamento será aberto no Google Calendar.</p>
+        <a
+          href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1_MpfJrNnqcsadZ7t96SjV2FyVLASGBXabDBe5_ekdvNfmBJr88FOrgas0uVU56xp_pwikVUDx?gv=true"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Agendar no Google Calendar (abre em nova aba)"
+          className="mt-2 inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-full hover:bg-blue-700 transition-colors focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-offset-2"
+        >
+          Agendar no Google Calendar
+        </a>
       </div>
     </section>
   );
