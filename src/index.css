@@ -2,10 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Global text alignment: center titles, justify body text */
-body {
-  text-align: justify;
-}
+/* Global text alignment: center titles.
+   Use Tailwind `text-justify` on specific blocks (e.g., paragraphs) when needed. */
 
 body h1,
 body h2,
