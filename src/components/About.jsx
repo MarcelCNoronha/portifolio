@@ -6,7 +6,7 @@ function About() {
     <section id="profile-page" className="min-h-screen flex items-center justify-center bg-metallic-purple text-gray-200">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-8 text-gray-100">Sobre Nós</h2>
-        <p className="text-lg leading-relaxed max-w-3xl mx-auto text-center md:text-justify mb-12 text-gray-300">
+        <p className="text-lg leading-relaxed max-w-3xl mx-auto text-justify md:text-justify mb-12 text-gray-300">
           Na{" "}
           <strong className="text-blue-600">Assessoria Digital</strong>, somos apaixonados por
           transformar negócios através do poder da tecnologia. Acreditamos que cada empresa,
@@ -19,12 +19,12 @@ function About() {
             <p
               className="leading-relaxed mb-4 text-justify text-gray-300"
             >
-              Somos uma **assessoria digital** que trabalha junto com você — entregamos soluções
+              Trabalhamos junto com você, entregando soluções
               práticas, iterativas e com acompanhamento contínuo. Nosso foco é transformar sua
               presença online por meio de ações que gerem impacto real e mensurável.
             </p>
            
-            <ul className="list-disc list-inside leading-relaxed space-y-2 text-justify md:text-left text-gray-300">
+            <ul className="list-disc list-inside leading-relaxed space-y-2 text-left md:text-left text-gray-300">
               <li>
                 <strong>Inovação:</strong> Estamos sempre atentos às tendências e tecnologias mais
                 atuais para entregar soluções criativas e eficazes.
