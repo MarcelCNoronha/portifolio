@@ -61,7 +61,7 @@ export function About() {
                 Especialistas em Transformação Digital
               </h2>
               <p className="text-lg text-gray-600">
-                Somos uma agência especializada em marketing digital com foco em resultados. Nossa missão é ajudar empresas a crescerem no ambiente digital através de estratégias personalizadas e inovadoras.
+                Somos uma assessoria especializada em implementação digital com foco em resultados. Nossa missão é ajudar empresas a crescerem no ambiente digital através de estratégias personalizadas e inovadoras.
               </p>
               <p className="text-gray-600">
                 Com anos de experiência no mercado, combinamos criatividade, tecnologia e análise de dados para entregar soluções que realmente fazem a diferença para nossos clientes.

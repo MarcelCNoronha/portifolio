@@ -13,14 +13,54 @@ export function Contact() {
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // PASSO 1: Encontrar a URL de Ação do Formulário
+  // 1. Abra o seu Google Form no navegador.
+  // 2. Clique com o botão direito em qualquer lugar da página e selecione "Exibir código fonte da página".
+  // 3. Procure (Ctrl+F ou Cmd+F) por "<form".
+  // 4. Copie a URL que está dentro do atributo `action="..."` e cole abaixo.
+  const GOOGLE_FORM_ACTION_URL = 'COLE_A_URL_DO_ACTION_DO_SEU_FORMULARIO_AQUI';
+
+  // PASSO 2: Encontrar os 'name' de cada campo
+  // No mesmo código fonte, procure pelas perguntas do seu formulário (ex: "Nome Completo").
+  // Perto de cada pergunta, você encontrará uma tag <input> ou <textarea>.
+  // Copie o valor que está dentro do atributo `name="..."` para cada campo correspondente.
+  const GOOGLE_FORM_FIELDS = {
+    // Exemplo: name="entry.123456789"
+    name: 'COLE_O_NAME_DO_CAMPO_NOME_AQUI',
+    phone: 'COLE_O_NAME_DO_CAMPO_TELEFONE_AQUI',
+    message: 'COLE_O_NAME_DO_CAMPO_MENSAGEM_AQUI',
+
+    // Para o campo de E-mail:
+    // Se você ativou a opção "Coletar e-mails" no Google Forms, o 'name' é geralmente 'emailAddress'.
+    // Se você criou um campo de texto normal para o e-mail, encontre o 'name' dele como fez para os outros.
+    email: 'emailAddress', 
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setFormData({ name: '', email: '', phone: '', message: '' });
-      setIsSubmitted(false);
-    }, 3000);
+
+    const formDataEncoded = new URLSearchParams();
+    formDataEncoded.append(GOOGLE_FORM_FIELDS.name, formData.name);
+    formDataEncoded.append(GOOGLE_FORM_FIELDS.email, formData.email);
+    formDataEncoded.append(GOOGLE_FORM_FIELDS.phone, formData.phone);
+    formDataEncoded.append(GOOGLE_FORM_FIELDS.message, formData.message);
+
+    try {
+      await fetch(GOOGLE_FORM_ACTION_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        body: formDataEncoded,
+      });
+
+      setIsSubmitted(true);
+      setTimeout(() => {
+        setFormData({ name: '', email: '', phone: '', message: '' });
+        setIsSubmitted(false);
+      }, 3000);
+    } catch (error) {
+      console.error('Erro ao enviar o formulário:', error);
+      // Opcional: Adicionar tratamento de erro para o usuário
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {

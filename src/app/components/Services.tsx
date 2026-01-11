@@ -96,7 +96,7 @@ export function Services() {
             Nossos Serviços
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Soluções Completas em Marketing Digital
+            Soluções Completas em Soluções Digitais
           </h2>
           <p className="text-lg text-gray-600">
             Oferecemos estratégias personalizadas para impulsionar seu negócio no ambiente digital
