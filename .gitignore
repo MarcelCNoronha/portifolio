@@ -12,9 +12,19 @@ dist
 dist-ssr
 *.local
 
+# Environment Variables
+.env
+.env.*
+!.env.example
+
+# Cache
+.vite/
+.eslintcache
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
+!.gitignore
 .idea
 .DS_Store
 *.suo
